@@ -4,7 +4,7 @@ speech.lang = "es-MX";
 let voices = [];
 window.speechSynthesis.onvoiceschanged = () => {
   voices = window.speechSynthesis.getVoices();
-  speech.voice = voices[0];
+  speech.voice = voices[3];
   let voiceSelect = document.querySelector("#voices");
   voices.forEach((voice, i) => (voiceSelect.options[i] = new Option(voice.name, i)));
 };
