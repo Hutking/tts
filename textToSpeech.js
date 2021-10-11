@@ -1,5 +1,5 @@
 let speech = new SpeechSynthesisUtterance();
-speech.lang = "es";
+speech.lang = "es-MX";
 
 let voices = [];
 window.speechSynthesis.onvoiceschanged = () => {
